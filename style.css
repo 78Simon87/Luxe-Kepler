@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-image: url(/imagenes/fondo_index.jpg);
+  background-image: url(imagenes/fondo_index.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
