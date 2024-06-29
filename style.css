@@ -1,0 +1,247 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(/imagenes/fondo_index.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  background: #56575B;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  box-shadow:0 15px 20px #00000082;
+  
+}
+
+.logo{
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  
+}
+
+.navegador ul{
+  list-style: none ;
+  
+}
+
+.header .navegador ul li{
+  float: left;
+  position: relative;
+  
+}
+
+.header .navegador ul li a{
+  font-size: 18px;
+  color :#FFFFFF;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  transition: all 1s ease;
+  border-radius: 15px;
+}
+
+.header .navegador ul li a:hover{
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.header .navegador ul li:hover > ul{
+  display: initial;
+}
+
+#toggle,
+.header label{
+  display: none;
+  cursor: pointer;
+  
+}
+
+.menu{
+  width: 65px;
+  height: 65px;
+  margin: 0;
+  padding: 0;
+}
+
+@media  (max-width: 950px){
+  .header label{
+  display: initial;
+}
+
+
+.header .navegador{
+  position:absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #5C5C5C;
+  display: none;
+}
+
+.header .navegador ul li {
+  width: 100%;
+  
+}
+.header .navegador ul li a{
+  padding: 8px 30px 8px 20%;
+}
+
+
+}
+
+#toggle:checked ~ .navegador{
+  display: block;
+}
+
+.centro{
+  display: flex;
+  justify-content: center;
+  height: 50rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+
+#line{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#line:hover{
+  color: #00FEFF;
+}
+
+.articulo{
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.articulo .texto{
+  animation-name: tracking-in-expand;
+  animation-duration: 3s;
+}
+
+.tracking-in-expand{animation:tracking-in-expand 0.4s linear both} @keyframes tracking-in-expand{0%{letter-spacing:-.2em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+.boton{
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #FF0606;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 8px 25px 8px 25px;
+  border: 5px double #FFFFFF;
+  transition: all .70s ease;
+  
+}
+
+
+
+.boton:hover{
+  transition: all .70s ease;
+  color: #FF0000;
+  background: #FFFFFF;
+  border: 6px double #FF0000;
+  box-shadow:0px 0px 10px 10px #FFFDF9;
+  animation-name:jello-horizontal;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.jello-horizontal{animation:jello-horizontal .9s linear both} @keyframes jello-horizontal{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}100%{transform:scale3d(1,1,1)}}
+
+.fondo{
+}
+
+.content{
+  
+}
+
+.ima{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 20px;
+  margin: auto;
+}
+.div_ventajas{
+  margin-bottom: 5rem;
+  display: block;
+  font-size: 20px;
+  align-items:center;
+  background: #B2B2B2C2;
+  border: 2px solid #FFFFFF;
+  padding: 20px;
+}
+
+.fit {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: #4B4B4B;
+  color: #FF9600;
+  width: 100%;
+  flex-direction: column;
+}
+
+.fit .as {
+  text-decoration: none;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  margin: 0 0 0 0;
+
+}
+
+.fit a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.vavi ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.fit p {
+  text-align: center;
+}
