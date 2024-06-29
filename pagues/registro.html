@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión y Registro</title>
+    <link rel="stylesheet" href="../Styles/registro.css">
+</head>
+<body>
+  
+    <header class="header">
+    <div class="logo">Luxe&Kepler</div>
+    <input id="toggle" type="checkbox">
+    <label for="toggle"><img class="menu" src="/imagenes/menu.png" alt="menu"></label>
+    
+    <nav class="navegador">
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+          
+        <li>
+          <a href="#">Pontact</a>
+        </li>
+        <li><a href="#">Politicas</a></li>
+      </ul>
+   </nav>
+  </header>
+  
+    <div class="container">
+        <div class="form-container">
+            <form action="https://formspree.io/f/xrbzznor" method="POST" class="form login-form">
+                <h2>Iniciar Sesión</h2>
+                <input type="email" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button class="enviar"type="submit">Ingresar</button>
+                <button class="toggle-btn">Registrarse</button>
+            </form>
+            <form action="https://formspree.io/f/xrbzznor" method="POST" class="form register-form">
+                <h2>Registrarse</h2>
+                <input type="text" placeholder="Usuario" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button class="enviar" type="submit">Registrar</button>
+                <button class="toggle-btn">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+    <script src="../funcionjs/registro.js"></script>
+</body>
+</html>

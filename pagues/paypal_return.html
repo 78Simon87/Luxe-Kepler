@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Pago</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const paymentCompleted = confirm("¿Quieres omitir temporal mente el pago?");
+            if (paymentCompleted) {
+                localStorage.setItem('paymentCompleted', 'true');
+                window.location.href = 'paginas_venta.html';
+            } else {
+                alert('El pago no fue confirmado. Por favor, inténtalo de nuevo.');
+                localStorage.removeItem('paymentCompleted');
+                window.location.href = 'banner.html'; // Redirige de vuelta a la página principal con el banner
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Procesando el pago...</h1>
+</body>
+</html>

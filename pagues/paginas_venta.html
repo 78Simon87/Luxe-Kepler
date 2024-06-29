@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=" ../Styles/paginas_v.css">
+  <title>venta</title>
+</head>
+
+<body>
+  
+  <header class="header">
+    <div class="logo">Luxe&Kepler</div>
+    <input id="toggle" type="checkbox">
+    <label for="toggle"><img class="menu" src="/imagenes/menu.png" alt="menu"></label>
+
+    <nav class="navegador">
+      <ul>
+        <li>
+          <a href="../index.html">home</a>
+        </li>
+        <li>
+          <a href="#">about</a>
+        </li>
+        <li>
+          <a href="#">contact</a>
+        </li>
+        <li><a href="#">Politicas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container_div">
+      <div>
+      <form id="form" action="https://formspree.io/f/xrbzznor" method="POST">
+        <label for="Descripción">Descripción de sitio web</label>
+        <textarea name="descripcion" id="descripcion" cols="23" rows="5" required></textarea>
+        
+
+        
+        <input type="text" name="Nombre" id="Nombre" placeholder="Name" required>
+        
+        <input type="email" id="Correo" name="Correo" placeholder="E-mail" required>
+        
+        <label for="acep_contac">Acepto resibir mensajes</label>
+        <input id="acep_contac"
+        class="acep_contac" type="checkbox" required>
+        
+        <button class="boton" type="submit">Envíar</button>
+        
+        
+      </div>
+      
+    </form>
+      
+  </div>
+  
+  <footer class="fit">
+    <nav class="vavi">
+      <ul>
+        <li>
+          <a class="as" href="#">About</a>
+        </li>
+        <li>
+          <a class="as" href="#">Contact</a>
+        </li>
+        <li>
+          <a class="as" href="#">Pribacy policy</a>
+        </li>
+      </ul>
+    </nav>
+    <p>copyright © 2024 <a href="#"> Jhonatan Castro</a> All Rigth Reserved - <br>Create By Jhonatan</p>
+  </footer>
+  
+  <script src="../funcionjs/venta.js"></script>
+</body>
+
+</html>
