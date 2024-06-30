@@ -113,7 +113,7 @@ body {
 }
 
 .centro{
-  background-image: url(/Styles/abstract-background.jpg);
+  background-image: url(Styles/abstract-background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -253,7 +253,7 @@ body {
   justify-content:center ;
   perspective: 1000px;
   align-items: center;
-  background-image: url(/Imagenes/fondo_index.jpg);
+  background-image: url(Imagenes/fondo_index.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
