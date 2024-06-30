@@ -1,0 +1,27 @@
+/* Estilo para centrar el loader en la pantalla */
+
+body{
+  background: #000000;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+        .loader {
+            border: 16px solid #878787;
+            border-radius: 50%;
+            border-top: 16px solid #E70000;
+            width: 70px;
+            height: 70px;
+            animation: spin 1.5s linear infinite;
+            position: absolute;
+            top:50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Animación de giro */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }

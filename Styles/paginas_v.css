@@ -123,11 +123,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50%;
+  margin: 50% 0 0 0;
 }
 
 .container_div div{
-  width: 75%;
+  width: 65%;
   height: 60%;
   backdrop-filter: blur(15px);
   box-shadow: 0 5px 10px 20px rgba(0, 0, 0, 0.34);
