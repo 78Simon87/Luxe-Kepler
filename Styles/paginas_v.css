@@ -24,7 +24,7 @@ html {
   top: 0;
   left: 0;
   width: 80%;
-  background: #56575B;
+  background: #7BBBFF;
   padding: 0 10%;
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@ html {
   top: 100%;
   left: 0;
   right: 0;
-  background: #5C5C5C;
+  background: #7BBBFF;
   display: none;
 }
 
