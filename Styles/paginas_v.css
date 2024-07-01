@@ -1,9 +1,9 @@
 body {
-  background-image: url(deep-space-4k-wallpaper-preview.jpg);
+  background-image: url(photo.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding: 0%;
+  padding: 0;
   margin: 0;
   
 }
@@ -117,8 +117,6 @@ html {
 }
 
 
-
-
 .container_div {
   display: flex;
   justify-content: center;
@@ -126,56 +124,20 @@ html {
   margin: 50% 0 0 0;
 }
 
-.container_div div{
-  width: 65%;
-  height: 60%;
-  backdrop-filter: blur(15px);
-  box-shadow: 0 5px 10px 20px rgba(0, 0, 0, 0.34);
-  padding: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  color: #FFFFFF;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 
-.container_div div input{
-  background: none;
-  color: #FFFFFF;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 1);
-  margin-top:4px;
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
 
-.container_div div button{
-  border:none;
-  background: rgba(165, 165, 165, 1);
-  color: #FFFFFF;
-  padding: 7px;
-  width: 50%;
-  height: 2.5rem;
-  border-radius: 10px;
-}
 
-.container_div div textarea{
-  color: #FFFFFF;
-  background: none;
-  border: none;
-  border-bottom: 1.5px solid rgba(255, 255, 255, 1);
-}
 
 .fit {
   display: flex;
-  position: relative;
+  position: absolute;
   align-items: center;
   background: #4B4B4B;
   color: #FF9600;
   width: 100%;
-  margin-top: 100%;
   flex-direction: column;
+  height: 10vh;
+  bottom:0;
 }
 
 .fit .as {
