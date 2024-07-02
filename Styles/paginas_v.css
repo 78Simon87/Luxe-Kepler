@@ -1,61 +1,56 @@
 body {
-  background-image: url(photo.jpeg);
+  background-image: url('photo.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 0;
   margin: 0;
-  
+  font-family: 'Arial', sans-serif;
 }
 
+*,
 *::before,
-*::after{
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+*::after {
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 100%;
   background: #7BBBFF;
   padding: 0 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 10000;
-  box-shadow:0 15px 20px #00000082;
-  
+  box-shadow: 0 15px 20px #00000082;
 }
 
-.logo{
+.logo {
   font-size: 25px;
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
-  
 }
 
-.navegador ul{
-  list-style: none ;
-  
+.navegador ul {
+  list-style: none;
 }
 
-.header .navegador ul li{
+.header .navegador ul li {
   float: left;
   position: relative;
-  
 }
 
-.header .navegador ul li a{
+.header .navegador ul li a {
   font-size: 18px;
-  color :#FFFFFF;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 20px;
   display: block;
@@ -63,103 +58,143 @@ html {
   border-radius: 15px;
 }
 
-.header .navegador ul li a:hover{
+.header .navegador ul li a:hover {
   background: #FFFFFF;
   color: #000000;
+  height: 100%;
 }
 
-.header .navegador ul li:hover > ul{
+.header .navegador ul li:hover > ul {
   display: initial;
 }
 
 #toggle,
-.header label{
+.header label {
   display: none;
   cursor: pointer;
-  
 }
 
-.menu{
+.menu {
   width: 65px;
   height: 65px;
   margin: 0;
   padding: 0;
 }
 
-@media  (max-width: 950px){
-  .header label{
-  display: initial;
+@media (max-width: 950px) {
+  .header label {
+    display: initial;
+  }
+
+  .header .navegador {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #7BBBFF;
+    display: none;
+  }
+
+  .header .navegador ul li {
+    width: 100%;
+  }
+
+  .header .navegador ul li a {
+    padding: 8px 30px 8px 20%;
+  }
 }
 
-
-.header .navegador{
-  position:absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #7BBBFF;
-  display: none;
-}
-
-.header .navegador ul li {
-  width: 100%;
-  
-}
-.header .navegador ul li a{
-  padding: 8px 30px 8px 20%;
-}
-
-
-}
-
-#toggle:checked ~ .navegador{
+#toggle:checked ~ .navegador {
   display: block;
 }
-
 
 .container_div {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50% 0 0 0;
+  min-height: 100vh;
+  padding-top: 80px; /* Ajusta el padding para que no quede detrás del header */
 }
 
+.container_div div {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 96%;
+  max-width: 600px;
+}
 
+.container_div div form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
+.container_div div form div {
+  display: flex;
+  flex-direction: column;
+}
 
+.container_div div form div label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container_div div form div input,
+.container_div div form div textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.container_div div form div textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.container_div div form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #7BBBFF;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.container_div div form button:hover {
+  background: #69A6D8;
+}
 
 .fit {
-  display: flex;
-  position: absolute;
-  align-items: center;
-  background: #4B4B4B;
-  color: #FF9600;
+  position: relative;
+  background: #7BBBFF;
+  color: #FFFFFF;
+  padding: 10px 0;
+  text-align: center;
   width: 100%;
-  flex-direction: column;
-  height: 10vh;
-  bottom:0;
 }
 
-.fit .as {
-  text-decoration: none;
-  color: #FFFFFF;
-  border-radius: 20px;
-  padding: 5px 10px 5px 10px;
-  margin: 0 0 0 0;
-
-}
-
-.fit a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-.vavi ul {
+.fit nav ul {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fit nav ul li {
   list-style: none;
 }
 
-.fit p {
-  text-align: center;
+.fit nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+
+.fit nav ul li a:hover {
+  color: #333;
 }
