@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href=" ../Styles/paginas_v.css">
-  <title>Luxekepler-venta.com</title>
+  <link rel="stylesheet" href="../Styles/paginas_v.css">
+  <title>Venta</title>
 </head>
 
 <body>
-  
   <header class="header">
     <div class="logo">Luxe&Kepler</div>
     <input id="toggle" type="checkbox">
@@ -18,99 +17,61 @@
     <nav class="navegador">
       <ul>
         <li>
-          <a href="../index.html">home</a>
+          <a href="../index.html">Home</a>
         </li>
         <li>
-          <a href="luxekepler@gmail.com">contact</a>
+          <a href="mailto:luxekepler@gmail.com">Contact</a>
         </li>
-        <li><a href="https://docs.google.com/document/d/1xo_wgUpEsr7b9mK9PzBcsAemd0bVsuK_C_4O9BqUoCs/edit?usp=drivesdk">Politicas</a></li>
+        <li><a href="https://docs.google.com/document/d/1xo_wgUpEsr7b9mK9PzBcsAemd0bVsuK_C_4O9BqUoCs/edit?usp=drivesdk">Políticas</a></li>
       </ul>
     </nav>
   </header>
+
   <div class="container_div">
-      <div>
-      <form
-      id="form"
-      action="https://formspree.io/f/manwyeqb"
-      method="POST">
+    <div>
+      <form id="form" action="https://formspree.io/f/manwyeqb" method="POST">
         <div>
-          
-          <h2>¿Para quien es el sitio web</h2>
-          <label
-          for="empresa">Empresa</label>
-        <input
-        type="checkbox"
-        name="empresa"
-        id="empresa">
-        <br><br>
-        <label
-        for="blog">marca personal/blog</label>
-        <input 
-        type="checkbox"
-        name="blog"
-        id="blog">
-        <br><br>
-        <label
-        for="negocio">negrocio</label>
-        <input
-        type="checkbox"
-        name="negocio"
-        id="negocio"
-        >
-        <br><br>
-        <label
-        for="informacon_text">Informacion de la empresa/negocio</label>
-        <textarea
-        name="informacion"
-        id="informacion"
-        cols="30"
-        rows="10"
-        placeholder="información de la empresa/negocio" ></textarea>
-       
-        <label 
-        for="descripcion_empresa">Descripcion de la empresa/negocio</label>
-        <textarea
-        name="descripcion_empresa"
-        id="descripcion_empresa"
-        cols="30"
-        rows="10" 
-        required></textarea>
-        
-        <h3>Hosting y dominio</h3>
-        <label for="hosting_dominio">Poseo un hosting y dominio</label>
-        <input name="hosting_dominio" id="hosting_dominio" type="checkbox">
-        <br>
-        <label for="dominio">Solo poseo un dominio</label>
-        <input id="dominio" name="dominio" type="url" placeholder="https:/TuDominio.com">
-        
-        <label for="no_posee">No poseo ni hosting ni dominio</label>
-        <input type="checkbox" name="no_posee" id="no_posee">
-        
-        <h3>Cantidad de secciones</h3>
-        <input name="secciones" type="number">
-        
-        <h3>Funcuionalidades ESPECÍFICAS</h3>
-        <textarea name="formaciones"placeholder="Por favor sea específico" cols="30" rows="10"></textarea>
-        
-        <h3>Adicionales</h3>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <br>
-        <label for="email">Correo de contacto</label>
-        <input id="email" name="email" type="email" required placeholder="Exaple@gmail.com">
-        <br>
-        <label for="terminos">Acepto los <a href="https://docs.google.com/document/d/1xo_wgUpEsr7b9mK9PzBcsAemd0bVsuK_C_4O9BqUoCs/edit?usp=drivesdk"> terminos y condiciones</a></label>
-        <input required id="terminos" name="terminos" type="checkbox">
-        <br>
-        <button type="submit">Enviar</button>
+          <h2>¿Para quién es el sitio web?</h2>
+          <label for="empresa">Empresa</label>
+          <input type="checkbox" name="empresa" id="empresa">
+          <br><br>
+          <label for="blog">Marca personal/blog</label>
+          <input type="checkbox" name="blog" id="blog">
+          <br><br>
+          <label for="negocio">Negocio</label>
+          <input type="checkbox" name="negocio" id="negocio">
+          <br><br>
+          <label for="informacion">Información de la empresa/negocio</label>
+          <textarea name="informacion" id="informacion" cols="30" rows="10" placeholder="Información de la empresa/negocio"></textarea>
+          <label for="descripcion_empresa">Descripción de la empresa/negocio</label>
+          <textarea name="descripcion_empresa" id="descripcion_empresa" cols="30" rows="10" required></textarea>
+          <h3>Hosting y dominio</h3>
+          <label for="hosting_dominio">Poseo un hosting y dominio</label>
+          <input name="hosting_dominio" id="hosting_dominio" type="checkbox">
+          <br>
+          <label for="dominio">Solo poseo un dominio</label>
+          <input id="dominio" name="dominio" type="url" placeholder="https://TuDominio.com">
+          <label for="no_posee">No poseo ni hosting ni dominio</label>
+          <input type="checkbox" name="no_posee" id="no_posee">
+          <h3>Cantidad de secciones</h3>
+          <input name="secciones" type="number">
+          <h3>Funcionalidades ESPECÍFICAS</h3>
+          <textarea name="funcionalidades" placeholder="Por favor sea específico" cols="30" rows="10"></textarea>
+          <h3>Adicionales</h3>
+          <textarea name="adicionales" cols="30" rows="10"></textarea>
+          <br>
+          <label for="email">Correo de contacto</label>
+          <input id="email" name="email" type="email" required placeholder="Example@gmail.com">
+          <br>
+          <label for="terminos">Acepto los <a href="https://docs.google.com/document/d/1xo_wgUpEsr7b9mK9PzBcsAemd0bVsuK_C_4O9BqUoCs/edit?usp=drivesdk">términos y condiciones</a></label>
+          <input required id="terminos" name="terminos" type="checkbox">
+          <br>
+          <button type="submit">Enviar</button>
         </div>
-        
-        
-      </div>
-      
-    </form>
-      
+      </form>
+    </div>
   </div>
-  
+
   <footer class="fit">
     <nav>
       <ul>
@@ -121,13 +82,13 @@
           <a href="#">Contact</a>
         </li>
         <li>
-          <a  href="#">Pribacy policy</a>
+          <a href="#">Privacy policy</a>
         </li>
       </ul>
     </nav>
-    <p>copyright © 2024 <a href="#"> Jhonatan Castro</a> All Rigth Reserved - <br>Create By Jhonatan</p>
+    <p>Copyright © 2024 <a href="#">Jhonatan Castro</a>. All Rights Reserved - <br> Created By Jhonatan</p>
   </footer>
-  
+
   <script src="../funcionjs/venta.js"></script>
 </body>
 
