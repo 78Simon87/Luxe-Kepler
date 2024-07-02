@@ -13,7 +13,7 @@
   <header class="header">
     <div class="logo">Luxe&Kepler</div>
     <input id="toggle" type="checkbox">
-    <label for="toggle"><img class="menu" src="../Imagenes/menu.png" alt="menu"></label>
+    <label for="toggle"><img class="menu" src="/imagenes/menu.png" alt="menu"></label>
 
     <nav class="navegador">
       <ul>
@@ -26,27 +26,86 @@
         <li>
           <a href="#">contact</a>
         </li>
-        <li><a href="#">Politicas</a></li>
+        <li><a href="https://docs.google.com/document/d/1xo_wgUpEsr7b9mK9PzBcsAemd0bVsuK_C_4O9BqUoCs/edit?usp=drivesdk">Politicas</a></li>
       </ul>
     </nav>
   </header>
   <div class="container_div">
       <div>
-      <form id="form" action="https://formspree.io/f/xrbzznor" method="POST">
-        <label for="Descripción">Descripción de sitio web</label>
-        <textarea name="descripcion" id="descripcion" cols="23" rows="5" required></textarea>
+      <form
+      id="form"
+      action="https://formspree.io/f/mqazzjee"
+      method="POST">
+        <div>
+          
+          <h2>¿Para quien es el sitio web</h2>
+          <label
+          for="empresa">Empresa</label>
+        <input
+        type="checkbox"
+        name="empresa"
+        id="empresa">
+        <br><br>
+        <label
+        for="blog">marca personal/blog</label>
+        <input 
+        type="checkbox"
+        name="blog"
+        id="blog">
+        <br><br>
+        <label
+        for="negocio">negrocio</label>
+        <input
+        type="checkbox"
+        name="negocio"
+        id="negocio"
+        >
+        <br><br>
+        <label
+        for="informacon_text">Informacion de la empresa/negocio</label>
+        <textarea
+        name="informacion"
+        id="informacion"
+        cols="30"
+        rows="10"
+        placeholder="información de la empresa/negocio" ></textarea>
+       
+        <label 
+        for="descripcion_empresa">Descripcion de la empresa/negocio</label>
+        <textarea
+        name="descripcion_empresa"
+        id="descripcion_empresa"
+        cols="30"
+        rows="10" 
+        required></textarea>
         
-
+        <h3>Hosting y dominio</h3>
+        <label for="hosting_dominio">Poseo un hosting y dominio</label>
+        <input name="hosting_dominio" id="hosting_dominio" type="checkbox">
+        <br>
+        <label for="dominio">Solo poseo un dominio</label>
+        <input id="dominio" name="dominio" type="url" placeholder="https:/TuDominio.com">
         
-        <input type="text" name="Nombre" id="Nombre" placeholder="Name" required>
+        <label for="no_posee">No poseo ni hosting ni dominio</label>
+        <input type="checkbox" name="no_posee" id="no_posee">
         
-        <input type="email" id="Correo" name="Correo" placeholder="E-mail" required>
+        <h3>Cantidad de secciones</h3>
+        <input name="secciones" type="number">
         
-        <label for="acep_contac">Acepto resibir mensajes</label>
-        <input id="acep_contac"
-        class="acep_contac" type="checkbox" required>
+        <h3>Funcuionalidades ESPECÍFICAS</h3>
+        <textarea name="formaciones"placeholder="Por favor sea específico" cols="30" rows="10"></textarea>
         
-        <button class="boton" type="submit">Envíar</button>
+        <h3>Adicionales</h3>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <label for="email">Correo de contacto</label>
+        <input id="email" name="email" type="email" required placeholder="Exaple@gmail.com">
+        <br>
+        <label for="terminos">Acepto los <a href="https://docs.google.com/document/d/1xo_wgUpEsr7b9mK9PzBcsAemd0bVsuK_C_4O9BqUoCs/edit?usp=drivesdk"> terminos y condiciones</a></label>
+        <input required id="terminos" name="terminos" type="checkbox">
+        <br>
+        <button type="submit">Enviar</button>
+        </div>
         
         
       </div>
@@ -56,16 +115,16 @@
   </div>
   
   <footer class="fit">
-    <nav class="vavi">
+    <nav>
       <ul>
         <li>
-          <a class="as" href="#">About</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a class="as" href="#">Contact</a>
+          <a href="#">Contact</a>
         </li>
         <li>
-          <a class="as" href="#">Pribacy policy</a>
+          <a  href="#">Pribacy policy</a>
         </li>
       </ul>
     </nav>
